@@ -1,0 +1,37 @@
+2023-12-10 23:29:09.710  INFO 20704 --- [Test worker] com.example.nasdak.Domain.UsersTest      : Starting UsersTest using Java 17.0.7 on DESKTOP-1IB1NEB with PID 20704 (started by BACK in D:\Devspace\nasdak)
+2023-12-10 23:29:09.712  INFO 20704 --- [Test worker] com.example.nasdak.Domain.UsersTest      : No active profile set, falling back to 1 default profile: "default"
+2023-12-10 23:29:10.275  INFO 20704 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-10 23:29:10.318  INFO 20704 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2023-12-10 23:29:10.429  WARN 20704 --- [Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
+2023-12-10 23:29:10.822  INFO 20704 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-10 23:29:10.862  INFO 20704 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-12-10 23:29:10.997  INFO 20704 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-10 23:29:11.124  INFO 20704 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10 23:29:11.254  INFO 20704 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10 23:29:11.279  INFO 20704 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-12-10 23:29:11.423  WARN 20704 --- [Test worker] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-12-10 23:29:11.906  INFO 20704 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-10 23:29:11.915  INFO 20704 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-10 23:29:12.488  WARN 20704 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-10 23:29:13.365  INFO 20704 --- [Test worker] com.example.nasdak.Domain.UsersTest      : Started UsersTest in 3.944 seconds (JVM running for 5.038)
+2023-12-10 23:29:13.613 DEBUG 20704 --- [Test worker] org.hibernate.SQL                        : 
+    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
+2023-12-10 23:29:13.623  INFO 20704 --- [Test worker] p6spy                                    : | 2 ms | call next value for hibernate_sequence
+2023-12-10 23:29:13.647 DEBUG 20704 --- [Test worker] org.hibernate.SQL                        : 
+    /* [34minsert[0m com.example.nasdak.Domain.Users
+        */ [34minsert[0m 
+        [34minto[0m
+            users
+            (email, password, phone, reg_date, user_no) 
+        [34mvalues[0m
+            (?, ?, ?, ?, ?)
+2023-12-10 23:29:13.649 TRACE 20704 --- [Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [backj123@fgi.kr]
+2023-12-10 23:29:13.650 TRACE 20704 --- [Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [0000]
+2023-12-10 23:29:13.650 TRACE 20704 --- [Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [010-1111-1111]
+2023-12-10 23:29:13.651 TRACE 20704 --- [Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [TIMESTAMP] - [2023-12-10T23:29]
+2023-12-10 23:29:13.654 TRACE 20704 --- [Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [12]
+2023-12-10 23:29:13.657  INFO 20704 --- [Test worker] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Users */ insert into users (email, password, phone, reg_date, user_no) values ('backj123@fgi.kr', '0000', '010-1111-1111', '10-12월-23', 12)
+2023-12-10 23:29:13.660  INFO 20704 --- [Test worker] p6spy                                    : | 0 ms | 
+2023-12-10 23:29:13.695  INFO 20704 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-10 23:29:13.697  INFO 20704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-10 23:29:13.714  INFO 20704 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
