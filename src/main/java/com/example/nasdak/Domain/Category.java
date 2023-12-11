@@ -20,6 +20,8 @@ public class Category {
     @JoinColumn(name = "user_no")
     private Users users;
 
+    private String content;
+
     @Column(name = "del_yn")
     private String delYn;
 
