@@ -13,10 +13,12 @@ public class CategoryDto {
 
     private long collectionNo;
 
+    private long categoryNo;
+
     private UsersDto usersDto;
 
     private String content;
 
-    private String delYn;
+    private String delYn = "N";
 
 }

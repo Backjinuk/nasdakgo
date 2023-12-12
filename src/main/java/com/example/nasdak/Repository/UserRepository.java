@@ -20,4 +20,20 @@ public interface UserRepository extends JpaRepository<Users, Long> {
             "WHERE u.user_no= :userNo ",
             nativeQuery = true)
     void userUpdate(long userNo, String email, String phone);
+
+
+    @Query(value =
+            "SELECT * " +
+                "FROM Users u " +
+            "WHERE u.user_id= :userId " +
+            "AND u.password= :password"
+            , nativeQuery = true)
+    Users userLogin(String userId, String password);
+
+    @Query(value =
+            "SELECT * FROM " +
+                "Users u " +
+            "WHERE u.user_id = :userId",
+            nativeQuery = true)
+    Users findByUserId(String userId);
 }

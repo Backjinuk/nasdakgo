@@ -13,6 +13,8 @@ public class UsersDto {
 
     private long userNo;
 
+    private String userId;
+
     private String password;
 
     private String email;

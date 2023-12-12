@@ -1,5 +1,6 @@
 package com.example.nasdak.Domain;
 
+import com.example.nasdak.Utils.DataUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,9 @@ public class Users {
     @Column(name = "user_no")
     private long userNo;
 
+    @Column(name = "user_id")
+    private String userId;
+
     private String password;
 
     private String email;
@@ -24,6 +28,6 @@ public class Users {
     private String phone;
 
     @Column(name = "reg_date")
-    private LocalDateTime regDate;
+    private LocalDateTime regDate = DataUtils.parseDateTime(DataUtils.getCurrentDateTimeAsString());
 
 }

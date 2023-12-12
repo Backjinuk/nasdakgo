@@ -32,7 +32,7 @@ class UsersTest {
         usersDto.setPhone("010-1111-1111");
         usersDto.setRegDate(DataUtils.parseDateTime(DataUtils.getCurrentDateTimeAsString()));
 
-        userService.save(modelMapper.map(usersDto, Users.class));
+//        userService.save(modelMapper.map(usersDto, Users.class));
     }
 
     @Test

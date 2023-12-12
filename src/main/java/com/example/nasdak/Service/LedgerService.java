@@ -14,7 +14,7 @@ public class LedgerService {
     LedgerRepository ledgerRepository;
 
 
-    public void save(Ledger ledger) { ledgerRepository.save(ledger);
+    public Ledger save(Ledger ledger) { return ledgerRepository.save(ledger);
     }
 
     public void ledgerUpdate(Ledger ledger) { ledgerRepository.ledgerUpdate(ledger.getFileManagerNo(), ledger.getDw(), ledger.getPrice(), ledger.getComment(), ledger.getLocation());

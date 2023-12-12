@@ -2,6 +2,7 @@ package com.example.nasdak.Dto;
 
 import com.example.nasdak.Domain.Category;
 import com.example.nasdak.Domain.Users;
+import com.example.nasdak.Utils.DataUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,7 +28,7 @@ public class LedgerDto {
 
     private String comment;
 
-    private LocalDateTime regDate;
+    private LocalDateTime regDate = DataUtils.parseDateTime(DataUtils.getCurrentDateTimeAsString());
 
     private Users users;
 

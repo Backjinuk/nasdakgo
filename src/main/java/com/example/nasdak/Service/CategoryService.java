@@ -5,6 +5,8 @@ import com.example.nasdak.Repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CategoryService {
 
@@ -22,5 +24,9 @@ public class CategoryService {
     }
 
     public Category findById(long categoryNo) { return categoryRepository.findById(categoryNo).get();
+    }
+
+    public List<Category> categoryUserList(Category category) {
+        return categoryRepository.categoryUserList(category.getUsers().getUserNo());
     }
 }

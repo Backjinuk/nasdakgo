@@ -12,13 +12,19 @@ public class UserService {
     UserRepository userRepository;
 
 
-    public void save(Users users){
-        userRepository.save(users);
+    public Users userJoin(Users users){
+        return userRepository.save(users);
     }
 
     public void userUpdate(Users user) { userRepository.userUpdate(user.getUserNo(), user.getEmail(), user.getPhone()); }
 
     public Users findById(long userNo) {
         return userRepository.findById(userNo).get();
+    }
+
+    public Users searchUserId(String userId){return userRepository.findByUserId(userId); }
+
+
+    public Users userLogin(Users users) { return userRepository.userLogin(users.getUserId(), users.getPassword());
     }
 }
