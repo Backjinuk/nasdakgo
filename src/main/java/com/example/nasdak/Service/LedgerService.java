@@ -1,6 +1,7 @@
 package com.example.nasdak.Service;
 
 import com.example.nasdak.Domain.Ledger;
+import com.example.nasdak.Dto.LedgerDto;
 import com.example.nasdak.Repository.LedgerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,5 +26,13 @@ public class LedgerService {
 
     public List<Ledger> findAll() {
         return ledgerRepository.findAll();
+    }
+
+    public List<?> findAllByUsers(long userNo) {
+        return ledgerRepository.findAllUsers(userNo);
+    }
+
+    public List<Ledger> ledgerItem(String regDate, long userNo) {
+        return ledgerRepository.ledgerItem(regDate, userNo);
     }
 }

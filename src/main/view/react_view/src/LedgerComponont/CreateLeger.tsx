@@ -29,6 +29,7 @@ export default function CreateLeger(){
             }).then(res => {
             setCategoryList(res.data);
         })
+
     }, []);
 
     const addLedger = () => {

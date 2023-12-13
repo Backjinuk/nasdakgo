@@ -15,13 +15,13 @@ export interface UsersType{
     regDate :  string
 }
 
-export interface LedgerType{
-    fileManagerNo : number ,
-    userDto : UsersType ,
-    CategoryDto : CategoryType ,
-    price : number ,
-    dw : number ,
-    location : string,
-    comment : string
-
+export interface LedgerType {
+    fileManagerNo: number,
+    userDto: UsersType,
+    CategoryDto: CategoryType,
+    price: number,
+    dw: number,
+    location: string,
+    comment: string,
+    regDate : string
 }

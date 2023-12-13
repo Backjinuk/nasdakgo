@@ -1,469 +1,57 @@
-2023-12-13 00:01:17.099  INFO 11872 --- [Thread-146] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:01:17.104  INFO 11872 --- [Thread-146] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Shutdown initiated...
-2023-12-13 00:01:17.110  INFO 11872 --- [Thread-146] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Shutdown completed.
-2023-12-13 00:01:17.192  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 11872 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:01:17.192  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:01:17.288  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:01:17.296  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:01:17.313  WARN 11872 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:01:17.343  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:01:17.343  INFO 11872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:01:17.344  INFO 11872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:01:17.373  INFO 11872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:01:17.373  INFO 11872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
-2023-12-13 00:01:17.384  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Starting...
-2023-12-13 00:01:17.390  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Start completed.
-2023-12-13 00:01:17.390  INFO 11872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:01:17.403  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:01:17.406  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:01:17.414  WARN 11872 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:01:17.456  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:01:17.457  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:01:17.552  WARN 11872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:01:17.633  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:01:17.643  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:01:17.646  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 0.469 seconds (JVM running for 9338.83)
-2023-12-13 00:01:17.647  INFO 11872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-12-13 00:01:19.099  INFO 11872 --- [Thread-150] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:01:19.100  INFO 11872 --- [Thread-150] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown initiated...
-2023-12-13 00:01:19.105  INFO 11872 --- [Thread-150] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown completed.
-2023-12-13 00:01:19.200  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 11872 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:01:19.201  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:01:19.333  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:01:19.348  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:01:19.385  WARN 11872 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:01:19.438  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:01:19.438  INFO 11872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:01:19.438  INFO 11872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:01:19.468  INFO 11872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:01:19.468  INFO 11872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 266 ms
-2023-12-13 00:01:19.481  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Starting...
-2023-12-13 00:01:19.485  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Start completed.
-2023-12-13 00:01:19.485  INFO 11872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:01:19.503  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:01:19.506  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:01:19.522  WARN 11872 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:01:19.589  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:01:19.589  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:01:19.754  WARN 11872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:01:19.835  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:01:19.848  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:01:19.851  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 0.671 seconds (JVM running for 9341.034)
-2023-12-13 00:01:19.852  INFO 11872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-12-13 00:01:25.396  INFO 11872 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:01:25.396  INFO 11872 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:01:25.397  INFO 11872 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-12-13 00:01:25.418 DEBUG 11872 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:01:25.419  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | call next value for hibernate_sequence
-2023-12-13 00:01:25.421 DEBUG 11872 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:01:25.421 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [15]
-2023-12-13 00:01:25.422  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 15)
-2023-12-13 00:01:25.422 DEBUG 11872 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:01:25.422 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [null]
-2023-12-13 00:01:25.422 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:01:25.422 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:01:25.423 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:01:25.423 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:01:25.423 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:01]
-2023-12-13 00:01:25.423 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [null]
-2023-12-13 00:01:25.423 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [15]
-2023-12-13 00:01:25.424  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (NULL, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', NULL, 15)
-2023-12-13 00:01:25.424  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:02:23.546  INFO 11872 --- [Thread-154] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:02:23.547  INFO 11872 --- [Thread-154] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Shutdown initiated...
-2023-12-13 00:02:23.553  INFO 11872 --- [Thread-154] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Shutdown completed.
-2023-12-13 00:02:23.627  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 11872 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:02:23.627  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:02:23.714  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:02:23.723  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:02:23.736  WARN 11872 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:02:23.767  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:02:23.767  INFO 11872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:02:23.767  INFO 11872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:02:23.788  INFO 11872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:02:23.788  INFO 11872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
-2023-12-13 00:02:23.794  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Starting...
-2023-12-13 00:02:23.799  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Start completed.
-2023-12-13 00:02:23.799  INFO 11872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:02:23.810  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:02:23.813  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:02:23.819  WARN 11872 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:02:23.858  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:02:23.859  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:02:23.922  WARN 11872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:02:23.972  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:02:23.981  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:02:23.983  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 0.371 seconds (JVM running for 9405.167)
-2023-12-13 00:02:23.984  INFO 11872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-12-13 00:02:30.068  INFO 11872 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:02:30.069  INFO 11872 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:02:30.069  INFO 11872 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-12-13 00:02:30.083 DEBUG 11872 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:02:30.083  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | call next value for hibernate_sequence
-2023-12-13 00:02:30.084 DEBUG 11872 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:02:30.085 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [16]
-2023-12-13 00:02:30.085  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 16)
-2023-12-13 00:02:30.086 DEBUG 11872 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [null]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:02]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [null]
-2023-12-13 00:02:30.086 TRACE 11872 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [16]
-2023-12-13 00:02:30.087  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (NULL, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', NULL, 16)
-2023-12-13 00:02:30.087  INFO 11872 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:03:46.447  INFO 11872 --- [Thread-158] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:03:46.447  INFO 11872 --- [Thread-158] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Shutdown initiated...
-2023-12-13 00:03:46.452  INFO 11872 --- [Thread-158] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Shutdown completed.
-2023-12-13 00:03:46.538  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 11872 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:03:46.538  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:03:46.642  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:03:46.653  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:03:46.679  WARN 11872 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:03:46.712  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:03:46.712  INFO 11872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:03:46.712  INFO 11872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:03:46.731  INFO 11872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:03:46.731  INFO 11872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
-2023-12-13 00:03:46.740  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Starting...
-2023-12-13 00:03:46.744  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Start completed.
-2023-12-13 00:03:46.745  INFO 11872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:03:46.757  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:03:46.759  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:03:46.768  WARN 11872 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:03:46.803  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:03:46.803  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:03:46.880  WARN 11872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:03:46.942  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:03:46.951  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:03:46.954  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 0.432 seconds (JVM running for 9488.138)
-2023-12-13 00:03:46.955  INFO 11872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-12-13 00:03:48.388  INFO 11872 --- [Thread-162] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:03:48.388  INFO 11872 --- [Thread-162] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Shutdown initiated...
-2023-12-13 00:03:48.393  INFO 11872 --- [Thread-162] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Shutdown completed.
-2023-12-13 00:03:48.491  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 11872 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:03:48.491  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:03:48.576  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:03:48.583  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:03:48.600  WARN 11872 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:03:48.632  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:03:48.632  INFO 11872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:03:48.632  INFO 11872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:03:48.652  INFO 11872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:03:48.652  INFO 11872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
-2023-12-13 00:03:48.661  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-41 - Starting...
-2023-12-13 00:03:48.663  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-41 - Start completed.
-2023-12-13 00:03:48.665  INFO 11872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:03:48.677  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:03:48.679  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:03:48.685  WARN 11872 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:03:48.716  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:03:48.716  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:03:48.781  WARN 11872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:03:48.828  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:03:48.835  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:03:48.837  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 0.384 seconds (JVM running for 9490.021)
-2023-12-13 00:03:48.838  INFO 11872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-12-13 00:05:47.338  INFO 11872 --- [Thread-166] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:05:47.339  INFO 11872 --- [Thread-166] com.zaxxer.hikari.HikariDataSource       : HikariPool-41 - Shutdown initiated...
-2023-12-13 00:05:47.344  INFO 11872 --- [Thread-166] com.zaxxer.hikari.HikariDataSource       : HikariPool-41 - Shutdown completed.
-2023-12-13 00:05:47.436  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 11872 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:05:47.437  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:05:47.550  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:05:47.560  INFO 11872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:05:47.581  WARN 11872 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:05:47.617  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:05:47.618  INFO 11872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:05:47.618  INFO 11872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:05:47.644  INFO 11872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:05:47.645  INFO 11872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
-2023-12-13 00:05:47.654  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Starting...
-2023-12-13 00:05:47.659  INFO 11872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Start completed.
-2023-12-13 00:05:47.659  INFO 11872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:05:47.674  INFO 11872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:05:47.677  INFO 11872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:05:47.684  WARN 11872 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:05:47.730  INFO 11872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:05:47.730  INFO 11872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:05:47.812  WARN 11872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:05:47.870  INFO 11872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:05:47.879  INFO 11872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:05:47.881  INFO 11872 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 0.466 seconds (JVM running for 9609.064)
-2023-12-13 00:05:47.882  INFO 11872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-12-13 00:06:09.380  INFO 11872 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:06:09.381  INFO 11872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Shutdown initiated...
-2023-12-13 00:06:09.387  INFO 11872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Shutdown completed.
-2023-12-13 00:06:11.898  INFO 15196 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 15196 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:06:11.899  INFO 15196 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:06:11.935  INFO 15196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-12-13 00:06:11.935  INFO 15196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-12-13 00:06:12.401  INFO 15196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:06:12.439  INFO 15196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:06:12.530  WARN 15196 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:06:12.860  INFO 15196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:06:12.868  INFO 15196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:06:12.868  INFO 15196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:06:12.942  INFO 15196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:06:12.942  INFO 15196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1006 ms
-2023-12-13 00:06:12.961  INFO 15196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-13 00:06:13.019  INFO 15196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-13 00:06:13.026  INFO 15196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:06:13.144  INFO 15196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:06:13.178  INFO 15196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2023-12-13 00:06:13.291  INFO 15196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-13 00:06:13.368  INFO 15196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:06:13.470  WARN 15196 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:06:13.804  INFO 15196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:06:13.810  INFO 15196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:06:14.081  WARN 15196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:06:14.386  INFO 15196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:06:14.415  INFO 15196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:06:14.424  INFO 15196 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 2.847 seconds (JVM running for 3.773)
-2023-12-13 00:06:23.566  INFO 15196 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:06:23.567  INFO 15196 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:06:23.568  INFO 15196 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-12-13 00:06:23.681 DEBUG 15196 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:06:23.686  INFO 15196 --- [http-nio-9010-exec-1] p6spy                                    : | 1 ms | call next value for hibernate_sequence
-2023-12-13 00:06:23.710 DEBUG 15196 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:06:23.712 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [17]
-2023-12-13 00:06:23.714  INFO 15196 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 17)
-2023-12-13 00:06:23.714 DEBUG 15196 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:06:23.715 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [null]
-2023-12-13 00:06:23.715 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:06:23.716 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:06:23.716 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:06:23.716 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:06:23.717 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:06]
-2023-12-13 00:06:23.719 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [null]
-2023-12-13 00:06:23.719 TRACE 15196 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [17]
-2023-12-13 00:06:23.721  INFO 15196 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (NULL, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', NULL, 17)
-2023-12-13 00:06:23.729  INFO 15196 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:09:33.462  INFO 15196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:09:33.464  INFO 15196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-13 00:09:33.471  INFO 15196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-13 00:09:39.598  INFO 5492 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 5492 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:09:39.599  INFO 5492 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:09:39.637  INFO 5492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-12-13 00:09:39.637  INFO 5492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-12-13 00:09:40.143  INFO 5492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:09:40.182  INFO 5492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:09:40.275  WARN 5492 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:09:40.608  INFO 5492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:09:40.615  INFO 5492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:09:40.616  INFO 5492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:09:40.693  INFO 5492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:09:40.693  INFO 5492 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
-2023-12-13 00:09:40.712  INFO 5492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-13 00:09:40.769  INFO 5492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-13 00:09:40.777  INFO 5492 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:09:40.891  INFO 5492 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:09:40.924  INFO 5492 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2023-12-13 00:09:41.034  INFO 5492 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-13 00:09:41.109  INFO 5492 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:09:41.210  WARN 5492 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:09:41.567  INFO 5492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:09:41.574  INFO 5492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:09:41.855  WARN 5492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:09:42.178  INFO 5492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:09:42.206  INFO 5492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:09:42.213  INFO 5492 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 2.939 seconds (JVM running for 3.548)
-2023-12-13 00:09:47.174  INFO 5492 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:09:47.174  INFO 5492 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:09:47.175  INFO 5492 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-12-13 00:09:47.287 DEBUG 5492 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:09:47.293  INFO 5492 --- [http-nio-9010-exec-1] p6spy                                    : | 1 ms | call next value for hibernate_sequence
-2023-12-13 00:09:47.317 DEBUG 5492 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:09:47.320 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [18]
-2023-12-13 00:09:47.321  INFO 5492 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 18)
-2023-12-13 00:09:47.321 DEBUG 5492 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:09:47.322 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [null]
-2023-12-13 00:09:47.323 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:09:47.323 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:09:47.323 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:09:47.324 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:09:47.324 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:09]
-2023-12-13 00:09:47.327 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [null]
-2023-12-13 00:09:47.327 TRACE 5492 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [18]
-2023-12-13 00:09:47.329  INFO 5492 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (NULL, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', NULL, 18)
-2023-12-13 00:09:47.335  INFO 5492 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:13:23.744  INFO 5492 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:13:23.747  INFO 5492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-13 00:13:23.753  INFO 5492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-13 00:13:30.153  INFO 20884 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 20884 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:13:30.154  INFO 20884 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:13:30.193  INFO 20884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-12-13 00:13:30.193  INFO 20884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-12-13 00:13:30.701  INFO 20884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:13:30.740  INFO 20884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:13:30.838  WARN 20884 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:13:31.172  INFO 20884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:13:31.179  INFO 20884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:13:31.179  INFO 20884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:13:31.255  INFO 20884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:13:31.255  INFO 20884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1061 ms
-2023-12-13 00:13:31.274  INFO 20884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-13 00:13:31.333  INFO 20884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-13 00:13:31.340  INFO 20884 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:13:31.463  INFO 20884 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:13:31.493  INFO 20884 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2023-12-13 00:13:31.601  INFO 20884 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-13 00:13:31.676  INFO 20884 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:13:31.780  WARN 20884 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:13:32.126  INFO 20884 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:13:32.133  INFO 20884 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:13:32.439  WARN 20884 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:13:32.753  INFO 20884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:13:32.787  INFO 20884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:13:32.795  INFO 20884 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 2.993 seconds (JVM running for 3.634)
-2023-12-13 00:13:36.476  INFO 20884 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:13:36.476  INFO 20884 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:13:36.477  INFO 20884 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-12-13 00:13:36.605 DEBUG 20884 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:13:36.611  INFO 20884 --- [http-nio-9010-exec-1] p6spy                                    : | 2 ms | call next value for hibernate_sequence
-2023-12-13 00:13:36.640 DEBUG 20884 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:13:36.643 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [19]
-2023-12-13 00:13:36.644  INFO 20884 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 19)
-2023-12-13 00:13:36.645 DEBUG 20884 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:13:36.645 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [null]
-2023-12-13 00:13:36.646 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:13:36.646 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:13:36.646 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:13:36.646 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:13:36.647 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:13]
-2023-12-13 00:13:36.649 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [null]
-2023-12-13 00:13:36.650 TRACE 20884 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [19]
-2023-12-13 00:13:36.655  INFO 20884 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (NULL, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', NULL, 19)
-2023-12-13 00:13:36.658  INFO 20884 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:16:54.136  INFO 20884 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:16:54.139  INFO 20884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-13 00:16:54.149  INFO 20884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-13 00:16:57.774  INFO 2488 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 2488 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:16:57.775  INFO 2488 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:16:57.816  INFO 2488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-12-13 00:16:57.817  INFO 2488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-12-13 00:16:58.316  INFO 2488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:16:58.355  INFO 2488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:16:58.443  WARN 2488 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:16:58.787  INFO 2488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:16:58.794  INFO 2488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:16:58.795  INFO 2488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:16:58.873  INFO 2488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:16:58.874  INFO 2488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
-2023-12-13 00:16:58.897  INFO 2488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-13 00:16:58.958  INFO 2488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-13 00:16:58.966  INFO 2488 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:16:59.083  INFO 2488 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:16:59.119  INFO 2488 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2023-12-13 00:16:59.238  INFO 2488 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-13 00:16:59.320  INFO 2488 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:16:59.426  WARN 2488 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:16:59.774  INFO 2488 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:16:59.779  INFO 2488 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:17:00.058  WARN 2488 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:17:00.375  INFO 2488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:17:00.405  INFO 2488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:17:00.413  INFO 2488 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 2.969 seconds (JVM running for 3.642)
-2023-12-13 00:17:04.540  INFO 2488 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:17:04.541  INFO 2488 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:17:04.541  INFO 2488 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-12-13 00:17:04.635 DEBUG 2488 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mselect[0m
-        users0_.user_no [34mas[0m user_no1_9_0_,
-        users0_.email [34mas[0m email2_9_0_,
-        users0_.password [34mas[0m password3_9_0_,
-        users0_.phone [34mas[0m phone4_9_0_,
-        users0_.reg_date [34mas[0m reg_date5_9_0_,
-        users0_.user_id [34mas[0m user_id6_9_0_ 
-    [34mfrom[0m
-        users users0_ 
-    [34mwhere[0m
-        users0_.user_no=?
-2023-12-13 00:17:04.639 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
-2023-12-13 00:17:04.643  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 1 ms | select users0_.user_no as user_no1_9_0_, users0_.email as email2_9_0_, users0_.password as password3_9_0_, users0_.phone as phone4_9_0_, users0_.reg_date as reg_date5_9_0_, users0_.user_id as user_id6_9_0_ from users users0_ where users0_.user_no=3
-2023-12-13 00:17:04.649 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_0_] : [VARCHAR]) - [user02@naver.com]
-2023-12-13 00:17:04.649 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_0_] : [VARCHAR]) - [0000]
-2023-12-13 00:17:04.649 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_0_] : [VARCHAR]) - [01022222222]
-2023-12-13 00:17:04.649 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_0_] : [TIMESTAMP]) - [null]
-2023-12-13 00:17:04.649 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_0_] : [VARCHAR]) - [user03]
-2023-12-13 00:17:04.655  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:17:04.675 DEBUG 2488 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
+2023-12-14 00:03:12.124 DEBUG 12096 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
+    /* [34mdynamic[0m native [34mSQL[0m query */ [34mSELECT[0m
+        * 
+    [34mFROM[0m
+        Ledger l 
+    [34mWHERE[0m
+        l.user_no = ? 
+        [34mAND[0m l.reg_date >= PARSEDATETIME(? || [36m' 00:00:00'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m) 
+        [34mAND[0m l.reg_date <= PARSEDATETIME(? || [36m' 23:59:59'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m)
+2023-12-14 00:03:12.185 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:12.185 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [2023-12-13]
+2023-12-14 00:03:12.186 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [2023-12-13]
+2023-12-14 00:03:12.186  INFO 12096 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* dynamic native SQL query */ SELECT * FROM Ledger l WHERE l.user_no = 3 AND l.reg_date >= PARSEDATETIME('2023-12-13' || ' 00:00:00', 'yyyy-MM-dd HH:mm:ss') AND l.reg_date <= PARSEDATETIME('2023-12-13' || ' 23:59:59', 'yyyy-MM-dd HH:mm:ss')
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [22]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [4]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.1]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:12.187 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [23]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [5]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.2]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [24]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [6]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.3]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:12.188 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [25]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [7]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.4]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [26]
+2023-12-14 00:03:12.189 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [8]
+2023-12-14 00:03:12.190 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.5]
+2023-12-14 00:03:12.190 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.190 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:12.190 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:12.190 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:12.190 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:12.190 DEBUG 12096 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
     [34mselect[0m
         category0_.category_no [34mas[0m category1_1_0_,
         category0_.content [34mas[0m content2_1_0_,
@@ -482,97 +70,18 @@
             [34mon[0m category0_.user_no=users1_.user_no 
     [34mwhere[0m
         category0_.category_no=?
-2023-12-13 00:17:04.676 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
-2023-12-13 00:17:04.677  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=5
-2023-12-13 00:17:04.678 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
-2023-12-13 00:17:04.678 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [취미]
-2023-12-13 00:17:04.679 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
-2023-12-13 00:17:04.679 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
-2023-12-13 00:17:04.680  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:17:04.701 DEBUG 2488 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:17:04.702  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | call next value for hibernate_sequence
-2023-12-13 00:17:04.713 DEBUG 2488 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:17:04.713 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [20]
-2023-12-13 00:17:04.714  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 20)
-2023-12-13 00:17:04.714 DEBUG 2488 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:17:04.714 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [null]
-2023-12-13 00:17:04.715 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:17:04.715 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:17:04.715 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:17:04.715 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:17:04.716 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:17]
-2023-12-13 00:17:04.718 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [null]
-2023-12-13 00:17:04.718 TRACE 2488 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [20]
-2023-12-13 00:17:04.720  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (NULL, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', NULL, 20)
-2023-12-13 00:17:04.721  INFO 2488 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:18:36.831  INFO 2488 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:18:36.834  INFO 2488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-13 00:18:36.842  INFO 2488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-13 00:18:44.325  INFO 18588 --- [restartedMain] com.example.nasdak.NasdakApplication     : Starting NasdakApplication using Java 21.0.1 on DESKTOP-1IB1NEB with PID 18588 (D:\Devspace\nasdak\build\classes\java\main started by BACK in D:\Devspace\nasdak)
-2023-12-13 00:18:44.326  INFO 18588 --- [restartedMain] com.example.nasdak.NasdakApplication     : No active profile set, falling back to 1 default profile: "default"
-2023-12-13 00:18:44.401  INFO 18588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-12-13 00:18:44.401  INFO 18588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-12-13 00:18:45.137  INFO 18588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-13 00:18:45.177  INFO 18588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
-2023-12-13 00:18:45.278  WARN 18588 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.nasdak]' package. Please check your configuration.
-2023-12-13 00:18:45.623  INFO 18588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9010 (http)
-2023-12-13 00:18:45.630  INFO 18588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-13 00:18:45.631  INFO 18588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2023-12-13 00:18:45.708  INFO 18588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-13 00:18:45.709  INFO 18588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1307 ms
-2023-12-13 00:18:45.729  INFO 18588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-13 00:18:45.786  INFO 18588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-13 00:18:45.793  INFO 18588 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/./nasdak'
-2023-12-13 00:18:45.907  INFO 18588 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-13 00:18:45.942  INFO 18588 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2023-12-13 00:18:46.052  INFO 18588 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-12-13 00:18:46.129  INFO 18588 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-12-13 00:18:46.238  WARN 18588 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.example.nasdak.Domain.FileManager] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-2023-12-13 00:18:46.583  INFO 18588 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-13 00:18:46.593  INFO 18588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-13 00:18:46.872  WARN 18588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-13 00:18:47.194  INFO 18588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-12-13 00:18:47.225  INFO 18588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9010 (http) with context path ''
-2023-12-13 00:18:47.232  INFO 18588 --- [restartedMain] com.example.nasdak.NasdakApplication     : Started NasdakApplication in 3.848 seconds (JVM running for 4.665)
-2023-12-13 00:18:56.759  INFO 18588 --- [http-nio-9010-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-13 00:18:56.759  INFO 18588 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-13 00:18:56.761  INFO 18588 --- [http-nio-9010-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-12-13 00:18:56.877 DEBUG 18588 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mselect[0m
-        users0_.user_no [34mas[0m user_no1_9_0_,
-        users0_.email [34mas[0m email2_9_0_,
-        users0_.password [34mas[0m password3_9_0_,
-        users0_.phone [34mas[0m phone4_9_0_,
-        users0_.reg_date [34mas[0m reg_date5_9_0_,
-        users0_.user_id [34mas[0m user_id6_9_0_ 
-    [34mfrom[0m
-        users users0_ 
-    [34mwhere[0m
-        users0_.user_no=?
-2023-12-13 00:18:56.884 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
-2023-12-13 00:18:56.888  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 2 ms | select users0_.user_no as user_no1_9_0_, users0_.email as email2_9_0_, users0_.password as password3_9_0_, users0_.phone as phone4_9_0_, users0_.reg_date as reg_date5_9_0_, users0_.user_id as user_id6_9_0_ from users users0_ where users0_.user_no=3
-2023-12-13 00:18:56.903 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_0_] : [VARCHAR]) - [user02@naver.com]
-2023-12-13 00:18:56.903 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_0_] : [VARCHAR]) - [0000]
-2023-12-13 00:18:56.903 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_0_] : [VARCHAR]) - [01022222222]
-2023-12-13 00:18:56.904 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_0_] : [TIMESTAMP]) - [null]
-2023-12-13 00:18:56.904 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_0_] : [VARCHAR]) - [user03]
-2023-12-13 00:18:56.913  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:18:56.920 DEBUG 18588 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
+2023-12-14 00:03:12.191 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2023-12-14 00:03:12.192  INFO 12096 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=4
+2023-12-14 00:03:12.192 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.192 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [여행]
+2023-12-14 00:03:12.192 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:12.192 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.193 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_1_] : [VARCHAR]) - [user02@naver.com]
+2023-12-14 00:03:12.193 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_1_] : [VARCHAR]) - [0000]
+2023-12-14 00:03:12.193 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_1_] : [VARCHAR]) - [01022222222]
+2023-12-14 00:03:12.193 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_1_] : [TIMESTAMP]) - [null]
+2023-12-14 00:03:12.193 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_1_] : [VARCHAR]) - [user03]
+2023-12-14 00:03:12.194 DEBUG 12096 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
     [34mselect[0m
         category0_.category_no [34mas[0m category1_1_0_,
         category0_.content [34mas[0m content2_1_0_,
@@ -591,41 +100,429 @@
             [34mon[0m category0_.user_no=users1_.user_no 
     [34mwhere[0m
         category0_.category_no=?
-2023-12-13 00:18:56.921 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
-2023-12-13 00:18:56.922  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=5
-2023-12-13 00:18:56.923 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
-2023-12-13 00:18:56.923 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [취미]
-2023-12-13 00:18:56.923 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
-2023-12-13 00:18:56.924 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
-2023-12-13 00:18:56.925  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
-2023-12-13 00:18:56.952 DEBUG 18588 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    [34mcall[0m next [34mvalue[0m [34mfor[0m hibernate_sequence
-2023-12-13 00:18:56.953  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | call next value for hibernate_sequence
-2023-12-13 00:18:56.965 DEBUG 18588 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            file_manager
-            (board_category, file_manager_no) 
-        [34mvalues[0m
-            ([36m'Ledger'[0m, ?)
-2023-12-13 00:18:56.966 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [21]
-2023-12-13 00:18:56.966  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into file_manager (board_category, file_manager_no) values ('Ledger', 21)
-2023-12-13 00:18:56.967 DEBUG 18588 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
-    /* [34minsert[0m com.example.nasdak.Domain.Ledger
-        */ [34minsert[0m 
-        [34minto[0m
-            ledger
-            (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) 
-        [34mvalues[0m
-            (?, ?, ?, ?, ?, ?, ?, ?)
-2023-12-13 00:18:56.967 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
-2023-12-13 00:18:56.968 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [쓸게 없냉]
-2023-12-13 00:18:56.968 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2000]
-2023-12-13 00:18:56.968 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [창원시 진해구]
-2023-12-13 00:18:56.968 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [BIGINT] - [300000]
-2023-12-13 00:18:56.968 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2023-12-13T00:18]
-2023-12-13 00:18:56.971 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [BIGINT] - [3]
-2023-12-13 00:18:56.971 TRACE 18588 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [8] as [BIGINT] - [21]
-2023-12-13 00:18:56.973  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | /* insert com.example.nasdak.Domain.Ledger */ insert into ledger (category_no, comment, dw, location, price, reg_date, user_no, file_manager_no) values (5, '쓸게 없냉', 2000, '창원시 진해구', 300000, '13-12월-23', 3, 21)
-2023-12-13 00:18:56.975  INFO 18588 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | 
+2023-12-14 00:03:12.194 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2023-12-14 00:03:12.195  INFO 12096 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=5
+2023-12-14 00:03:12.196 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.196 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [취미]
+2023-12-14 00:03:12.196 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:12.196 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.197 DEBUG 12096 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:12.197 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2023-12-14 00:03:12.198  INFO 12096 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=6
+2023-12-14 00:03:12.198 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.198 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [식당]
+2023-12-14 00:03:12.198 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:12.199 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.199 DEBUG 12096 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:12.200 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [7]
+2023-12-14 00:03:12.200  INFO 12096 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=7
+2023-12-14 00:03:12.201 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.201 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [가전]
+2023-12-14 00:03:12.201 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:12.201 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.202 DEBUG 12096 --- [http-nio-9010-exec-1] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:12.202 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-12-14 00:03:12.203  INFO 12096 --- [http-nio-9010-exec-1] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=8
+2023-12-14 00:03:12.203 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.203 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [게임]
+2023-12-14 00:03:12.203 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:12.203 TRACE 12096 --- [http-nio-9010-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.436 DEBUG 12096 --- [http-nio-9010-exec-2] org.hibernate.SQL                        : 
+    /* [34mdynamic[0m native [34mSQL[0m query */ [34mSELECT[0m
+        * 
+    [34mFROM[0m
+        Ledger l 
+    [34mWHERE[0m
+        l.user_no = ? 
+        [34mAND[0m l.reg_date >= PARSEDATETIME(? || [36m' 00:00:00'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m) 
+        [34mAND[0m l.reg_date <= PARSEDATETIME(? || [36m' 23:59:59'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m)
+2023-12-14 00:03:12.437 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:12.437 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [2023-12-14]
+2023-12-14 00:03:12.437 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [2023-12-14]
+2023-12-14 00:03:12.437  INFO 12096 --- [http-nio-9010-exec-2] p6spy                                    : | 0 ms | /* dynamic native SQL query */ SELECT * FROM Ledger l WHERE l.user_no = 3 AND l.reg_date >= PARSEDATETIME('2023-12-14' || ' 00:00:00', 'yyyy-MM-dd HH:mm:ss') AND l.reg_date <= PARSEDATETIME('2023-12-14' || ' 23:59:59', 'yyyy-MM-dd HH:mm:ss')
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [21]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [5]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [쓸게 없냉]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [2000]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [300000]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-14T00:18]
+2023-12-14 00:03:12.438 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:12.439 DEBUG 12096 --- [http-nio-9010-exec-2] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:12.439 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2023-12-14 00:03:12.439  INFO 12096 --- [http-nio-9010-exec-2] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=5
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [취미]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_1_] : [VARCHAR]) - [user02@naver.com]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_1_] : [VARCHAR]) - [0000]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_1_] : [VARCHAR]) - [01022222222]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_1_] : [TIMESTAMP]) - [null]
+2023-12-14 00:03:12.440 TRACE 12096 --- [http-nio-9010-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_1_] : [VARCHAR]) - [user03]
+2023-12-14 00:03:20.313 DEBUG 12096 --- [http-nio-9010-exec-3] org.hibernate.SQL                        : 
+    /* [34mdynamic[0m native [34mSQL[0m query */ [34mSELECT[0m
+        * 
+    [34mFROM[0m
+        Category c 
+    [34mWHERE[0m
+        c.user_no= ? 
+2023-12-14 00:03:20.313 DEBUG 12096 --- [http-nio-9010-exec-4] org.hibernate.SQL                        : 
+    /* [34mdynamic[0m native [34mSQL[0m query */ [34mSELECT[0m
+        [34mDISTINCT[0m FORMATDATETIME(REG_DATE,
+        [36m'yyyy-MM-dd'[0m) [34mAS[0m REG_DATE 
+    [34mFROM[0m
+        Ledger l 
+    [34mWHERE[0m
+        l.user_no= ?
+2023-12-14 00:03:20.314 TRACE 12096 --- [http-nio-9010-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:20.314 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:20.315  INFO 12096 --- [http-nio-9010-exec-4] p6spy                                    : | 0 ms | /* dynamic native SQL query */ SELECT DISTINCT FORMATDATETIME(REG_DATE, 'yyyy-MM-dd') AS REG_DATE FROM Ledger l WHERE l.user_no= 3
+2023-12-14 00:03:20.315  INFO 12096 --- [http-nio-9010-exec-3] p6spy                                    : | 0 ms | /* dynamic native SQL query */ SELECT * FROM Category c WHERE c.user_no= 3 
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([REG_DATE] : [VARCHAR]) - [2023-12-13]
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [4]
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([REG_DATE] : [VARCHAR]) - [2023-12-14]
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content] : [VARCHAR]) - [여행]
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.315 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [5]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content] : [VARCHAR]) - [취미]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [6]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content] : [VARCHAR]) - [식당]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [7]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content] : [VARCHAR]) - [가전]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.316 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [8]
+2023-12-14 00:03:20.317 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content] : [VARCHAR]) - [게임]
+2023-12-14 00:03:20.317 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.317 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.318 DEBUG 12096 --- [http-nio-9010-exec-3] org.hibernate.SQL                        : 
+    [34mselect[0m
+        users0_.user_no [34mas[0m user_no1_9_0_,
+        users0_.email [34mas[0m email2_9_0_,
+        users0_.password [34mas[0m password3_9_0_,
+        users0_.phone [34mas[0m phone4_9_0_,
+        users0_.reg_date [34mas[0m reg_date5_9_0_,
+        users0_.user_id [34mas[0m user_id6_9_0_ 
+    [34mfrom[0m
+        users users0_ 
+    [34mwhere[0m
+        users0_.user_no=?
+2023-12-14 00:03:20.318 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:20.320  INFO 12096 --- [http-nio-9010-exec-3] p6spy                                    : | 0 ms | select users0_.user_no as user_no1_9_0_, users0_.email as email2_9_0_, users0_.password as password3_9_0_, users0_.phone as phone4_9_0_, users0_.reg_date as reg_date5_9_0_, users0_.user_id as user_id6_9_0_ from users users0_ where users0_.user_no=3
+2023-12-14 00:03:20.321 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_0_] : [VARCHAR]) - [user02@naver.com]
+2023-12-14 00:03:20.321 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_0_] : [VARCHAR]) - [0000]
+2023-12-14 00:03:20.321 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_0_] : [VARCHAR]) - [01022222222]
+2023-12-14 00:03:20.321 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_0_] : [TIMESTAMP]) - [null]
+2023-12-14 00:03:20.321 TRACE 12096 --- [http-nio-9010-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_0_] : [VARCHAR]) - [user03]
+2023-12-14 00:03:20.336 DEBUG 12096 --- [http-nio-9010-exec-9] org.hibernate.SQL                        : 
+    /* [34mdynamic[0m native [34mSQL[0m query */ [34mSELECT[0m
+        * 
+    [34mFROM[0m
+        Ledger l 
+    [34mWHERE[0m
+        l.user_no = ? 
+        [34mAND[0m l.reg_date >= PARSEDATETIME(? || [36m' 00:00:00'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m) 
+        [34mAND[0m l.reg_date <= PARSEDATETIME(? || [36m' 23:59:59'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m)
+2023-12-14 00:03:20.337 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:20.338 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [2023-12-13]
+2023-12-14 00:03:20.338 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [2023-12-13]
+2023-12-14 00:03:20.340  INFO 12096 --- [http-nio-9010-exec-9] p6spy                                    : | 1 ms | /* dynamic native SQL query */ SELECT * FROM Ledger l WHERE l.user_no = 3 AND l.reg_date >= PARSEDATETIME('2023-12-13' || ' 00:00:00', 'yyyy-MM-dd HH:mm:ss') AND l.reg_date <= PARSEDATETIME('2023-12-13' || ' 23:59:59', 'yyyy-MM-dd HH:mm:ss')
+2023-12-14 00:03:20.340 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [22]
+2023-12-14 00:03:20.340 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [4]
+2023-12-14 00:03:20.340 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.1]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [23]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [5]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.2]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [24]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [6]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.3]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:20.341 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [25]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [7]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.4]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [26]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [8]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [테스트입니다.5]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구 응당동]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [100000]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-13T22:58]
+2023-12-14 00:03:20.342 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.342 DEBUG 12096 --- [http-nio-9010-exec-9] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:20.343 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2023-12-14 00:03:20.344  INFO 12096 --- [http-nio-9010-exec-9] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=4
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [여행]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_1_] : [VARCHAR]) - [user02@naver.com]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_1_] : [VARCHAR]) - [0000]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_1_] : [VARCHAR]) - [01022222222]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_1_] : [TIMESTAMP]) - [null]
+2023-12-14 00:03:20.344 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_1_] : [VARCHAR]) - [user03]
+2023-12-14 00:03:20.345 DEBUG 12096 --- [http-nio-9010-exec-9] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:20.345 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2023-12-14 00:03:20.346  INFO 12096 --- [http-nio-9010-exec-9] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=5
+2023-12-14 00:03:20.346 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.346 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [취미]
+2023-12-14 00:03:20.346 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.346 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.347 DEBUG 12096 --- [http-nio-9010-exec-9] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:20.347 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2023-12-14 00:03:20.348  INFO 12096 --- [http-nio-9010-exec-9] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=6
+2023-12-14 00:03:20.348 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.348 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [식당]
+2023-12-14 00:03:20.348 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.348 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.349 DEBUG 12096 --- [http-nio-9010-exec-9] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:20.349 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [7]
+2023-12-14 00:03:20.350  INFO 12096 --- [http-nio-9010-exec-9] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=7
+2023-12-14 00:03:20.351 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.351 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [가전]
+2023-12-14 00:03:20.351 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.351 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.351 DEBUG 12096 --- [http-nio-9010-exec-9] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:20.352 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-12-14 00:03:20.354  INFO 12096 --- [http-nio-9010-exec-9] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=8
+2023-12-14 00:03:20.354 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.354 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [게임]
+2023-12-14 00:03:20.354 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.354 TRACE 12096 --- [http-nio-9010-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.637 DEBUG 12096 --- [http-nio-9010-exec-6] org.hibernate.SQL                        : 
+    /* [34mdynamic[0m native [34mSQL[0m query */ [34mSELECT[0m
+        * 
+    [34mFROM[0m
+        Ledger l 
+    [34mWHERE[0m
+        l.user_no = ? 
+        [34mAND[0m l.reg_date >= PARSEDATETIME(? || [36m' 00:00:00'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m) 
+        [34mAND[0m l.reg_date <= PARSEDATETIME(? || [36m' 23:59:59'[0m, [36m'yyyy-MM-dd HH:mm:ss'[0m)
+2023-12-14 00:03:20.637 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2023-12-14 00:03:20.638 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [2023-12-14]
+2023-12-14 00:03:20.638 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [2023-12-14]
+2023-12-14 00:03:20.639  INFO 12096 --- [http-nio-9010-exec-6] p6spy                                    : | 1 ms | /* dynamic native SQL query */ SELECT * FROM Ledger l WHERE l.user_no = 3 AND l.reg_date >= PARSEDATETIME('2023-12-14' || ' 00:00:00', 'yyyy-MM-dd HH:mm:ss') AND l.reg_date <= PARSEDATETIME('2023-12-14' || ' 23:59:59', 'yyyy-MM-dd HH:mm:ss')
+2023-12-14 00:03:20.639 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([file_manager_no] : [BIGINT]) - [21]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([category_no] : [BIGINT]) - [5]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([comment] : [VARCHAR]) - [쓸게 없냉]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([dw] : [BIGINT]) - [2000]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([location] : [VARCHAR]) - [창원시 진해구]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([price] : [BIGINT]) - [300000]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date] : [TIMESTAMP]) - [2023-12-14T00:18]
+2023-12-14 00:03:20.640 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no] : [BIGINT]) - [3]
+2023-12-14 00:03:20.641 DEBUG 12096 --- [http-nio-9010-exec-6] org.hibernate.SQL                        : 
+    [34mselect[0m
+        category0_.category_no [34mas[0m category1_1_0_,
+        category0_.content [34mas[0m content2_1_0_,
+        category0_.del_yn [34mas[0m del_yn3_1_0_,
+        category0_.user_no [34mas[0m user_no4_1_0_,
+        users1_.user_no [34mas[0m user_no1_9_1_,
+        users1_.email [34mas[0m email2_9_1_,
+        users1_.password [34mas[0m password3_9_1_,
+        users1_.phone [34mas[0m phone4_9_1_,
+        users1_.reg_date [34mas[0m reg_date5_9_1_,
+        users1_.user_id [34mas[0m user_id6_9_1_ 
+    [34mfrom[0m
+        category category0_ 
+    [34mleft[0m [34mouter[0m [34mjoin[0m
+        users users1_ 
+            [34mon[0m category0_.user_no=users1_.user_no 
+    [34mwhere[0m
+        category0_.category_no=?
+2023-12-14 00:03:20.641 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2023-12-14 00:03:20.642  INFO 12096 --- [http-nio-9010-exec-6] p6spy                                    : | 0 ms | select category0_.category_no as category1_1_0_, category0_.content as content2_1_0_, category0_.del_yn as del_yn3_1_0_, category0_.user_no as user_no4_1_0_, users1_.user_no as user_no1_9_1_, users1_.email as email2_9_1_, users1_.password as password3_9_1_, users1_.phone as phone4_9_1_, users1_.reg_date as reg_date5_9_1_, users1_.user_id as user_id6_9_1_ from category category0_ left outer join users users1_ on category0_.user_no=users1_.user_no where category0_.category_no=5
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no1_9_1_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([content2_1_0_] : [VARCHAR]) - [취미]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([del_yn3_1_0_] : [VARCHAR]) - [N]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_no4_1_0_] : [BIGINT]) - [3]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_9_1_] : [VARCHAR]) - [user02@naver.com]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_9_1_] : [VARCHAR]) - [0000]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([phone4_9_1_] : [VARCHAR]) - [01022222222]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([reg_date5_9_1_] : [TIMESTAMP]) - [null]
+2023-12-14 00:03:20.642 TRACE 12096 --- [http-nio-9010-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id6_9_1_] : [VARCHAR]) - [user03]

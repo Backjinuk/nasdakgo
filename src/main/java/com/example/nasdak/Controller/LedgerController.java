@@ -9,14 +9,19 @@ import com.example.nasdak.Dto.UsersDto;
 import com.example.nasdak.Service.CategoryService;
 import com.example.nasdak.Service.LedgerService;
 import com.example.nasdak.Service.UserService;
+import org.apache.ibatis.annotations.Param;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.testng.reporters.jq.Model;
 
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/ledger/")
@@ -45,5 +50,46 @@ public class LedgerController {
 
         Ledger ledger = ledgerService.save(modelMapper.map(requestData.get("LedgerDto"), Ledger.class));
         return modelMapper.map(ledger, LedgerDto.class);
+    }
+
+    @RequestMapping("LedgerList")
+    public List<?> LedgerList(@RequestBody UsersDto usersDto){
+
+        return ledgerService.findAllByUsers(usersDto.getUserNo());
+//                .stream().map(ledger -> {
+//                    LedgerDto ledgerDto = modelMapper.map(ledger, LedgerDto.class);
+//
+//                    //Entity를 Dto로 변환
+//                    ledgerDto.setUsersDto(modelMapper.map(ledger.getUsers(), UsersDto.class));
+//                    ledgerDto.setCategoryDto(modelMapper.map(ledger.getCategory(), CategoryDto.class));
+//
+//                    //Entity 초기화
+//                    ledgerDto.setUsers(null); ledgerDto.setCategoryDto(null);
+//
+//                    return ledgerDto;
+//                })
+//                .collect(Collectors.toList());
+    }
+
+    @RequestMapping("ledgerItem")
+    public List<LedgerDto> ledgerItem(@RequestBody LedgerDto ledgerDto) {
+
+        System.out.println("userNo.get() = " + ledgerDto.getUserNo());
+        System.out.println("reg_date.get() = " + ledgerDto.getRegDate2());
+
+        return ledgerService.ledgerItem( ledgerDto.getRegDate2(), ledgerDto.getUserNo())
+                .stream().map(ledger -> {
+                    LedgerDto ledgerDto2 = modelMapper.map(ledger, LedgerDto.class);
+
+                    //Entity를 Dto로 변환
+                    ledgerDto2.setUsersDto(modelMapper.map(ledger.getUsers(), UsersDto.class));
+                    ledgerDto2.setCategoryDto(modelMapper.map(ledger.getCategory(), CategoryDto.class));
+
+                    //Entity 초기화
+                    ledgerDto2.setUsers(null); ledgerDto2.setCategoryDto(null);
+
+                    return ledgerDto2;
+                })
+                .collect(Collectors.toList());
     }
 }

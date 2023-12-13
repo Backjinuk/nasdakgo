@@ -33,4 +33,8 @@ public class LedgerDto {
     private Users users;
 
     private Category category;
+
+    private long userNo;
+
+    private String regDate2;
 }
