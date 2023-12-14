@@ -21,8 +21,6 @@ export default function Join() {
             headers: {
                 "Content-Type": "application/json"            }
         }).then((res) => {
-
-            console.log(res);
             if (res.data > 0) {
                 setIdSearch("이미 사용중인 아이디 입니다")
                 setAddMemberBtn(true);

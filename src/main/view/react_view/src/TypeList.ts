@@ -4,6 +4,7 @@ export interface CategoryType{
     userdDto : UsersType,
     content : string ,
     delYn : string
+
 }
 
 export interface UsersType{
@@ -18,7 +19,7 @@ export interface UsersType{
 export interface LedgerType {
     fileManagerNo: number,
     userDto: UsersType,
-    CategoryDto: CategoryType,
+    categoryDto: CategoryType,
     price: number,
     dw: number,
     location: string,

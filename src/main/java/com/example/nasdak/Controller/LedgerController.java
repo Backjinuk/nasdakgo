@@ -20,6 +20,7 @@ import org.testng.reporters.jq.Model;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -91,5 +92,24 @@ public class LedgerController {
                     return ledgerDto2;
                 })
                 .collect(Collectors.toList());
+    }
+
+    @RequestMapping("ledgertDetail")
+    public LedgerDto ledgerDetail(@RequestBody LedgerDto ledgerDto){
+        Ledger ledger = ledgerService.ledgerDetail(modelMapper.map(ledgerDto, Ledger.class));
+
+        ledgerDto = modelMapper.map(ledger, LedgerDto.class);
+
+        ledgerDto.setCategoryDto(modelMapper.map(ledgerDto.getCategory(), CategoryDto.class));
+        ledgerDto.setUsersDto(modelMapper.map(ledgerDto.getUsers(), UsersDto.class));
+        ledgerDto.setCategory(null); ledgerDto.setUsers(null);
+
+        return ledgerDto;
+    }
+
+    @RequestMapping("ledgerItemUpdate")
+    public Map<String, Objects> ledgerItemUpdate(@RequestBody LedgerDto ledgerDto){
+
+        return null;
     }
 }

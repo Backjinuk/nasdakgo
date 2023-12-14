@@ -27,9 +27,10 @@ class UsersTest {
     @Test
     public void userSave(){
         UsersDto usersDto = new UsersDto();
+        usersDto.setUserId("user002");
         usersDto.setEmail("backj123@fgi.kr");
         usersDto.setPassword("0000");
-        usersDto.setPhone("010-1111-1111");
+        usersDto.setPhone("010-2222-2222");
         usersDto.setRegDate(DataUtils.parseDateTime(DataUtils.getCurrentDateTimeAsString()));
 
 //        userService.save(modelMapper.map(usersDto, Users.class));
@@ -64,7 +65,6 @@ class UsersTest {
 
     @Test
     public void categoryAppend(){
-
         CategoryDto categoryDto = new CategoryDto();
         Users users = userService.findById(1L);
 

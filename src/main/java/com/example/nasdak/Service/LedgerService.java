@@ -35,4 +35,8 @@ public class LedgerService {
     public List<Ledger> ledgerItem(String regDate, long userNo) {
         return ledgerRepository.ledgerItem(regDate, userNo);
     }
+
+    public Ledger ledgerDetail(Ledger ledger) {
+        return ledgerRepository.getById(ledger.getFileManagerNo());
+    }
 }

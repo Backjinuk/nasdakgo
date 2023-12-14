@@ -1,11 +1,11 @@
 import axios from "axios";
-import Cookies from "js-cookie";
 import Swal from "sweetalert2";
 import {useEffect, useState} from "react";
-import {CategoryType, UsersType, LedgerType} from "../TypeList";
+import {CategoryType} from "../TypeList";
 
 
-export default function CreateLeger(){
+export default function CreateLeger({ChangeEvent, categoryList} : any){
+
     const css : any ={
         height: "150px",
         display: "flex",
@@ -13,24 +13,6 @@ export default function CreateLeger(){
         justifyContent: "right",
         marginRight: "30%"
     }
-
-
-
-    const [categoryList, setCategoryList] = useState<CategoryType[]>([]);
-
-    useEffect(() => {
-        const usersDto = {
-            userNo : sessionStorage.getItem("userNo"),
-            userId : sessionStorage.getItem("userId")
-        }
-
-        axios.post("api/category/categoryList", JSON.stringify({usersDto}),
-            { headers : {"Content-Type" : "application/json"}
-            }).then(res => {
-            setCategoryList(res.data);
-        })
-
-    }, []);
 
     const addLedger = () => {
         let frm = $("form[name=addLedger]").serializeArray();
@@ -45,18 +27,14 @@ export default function CreateLeger(){
             LedgerDto[field.name] = field.value;
 
             if (field.name === 'category_no') {
-                const categoryDto = {
+                LedgerDto["categoryDto"] = {
                     categoryNo: field.value
-                }
-                LedgerDto["categoryDto"] = categoryDto;
+                };
             }
 
         }
 
-
         LedgerDto["usersDto"] = usersDto;
-
-        console.log(JSON.stringify({LedgerDto}));
 
         //
         //
@@ -77,6 +55,7 @@ export default function CreateLeger(){
                     title: '작성되었습니다.',
                     timer: 400
                 });
+                ChangeEvent();
             }
         });
 
@@ -116,7 +95,7 @@ export default function CreateLeger(){
                        data-bs-toggle="modal"
                        data-bs-target="#addLedger"/>
             </div>
-
+            <form></form>
             <div className="modal fade " id="addLedger" data-bs-keyboard="false"
                  aria-labelledby="staticBackdropLabel" aria-hidden="true" tabIndex={-1}>
                 <div className="modal-dialog modal-dialog-centered">

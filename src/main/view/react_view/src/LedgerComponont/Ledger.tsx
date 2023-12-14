@@ -1,29 +1,29 @@
 import {LedgerType} from "../TypeList";
 import {useEffect, useState} from "react";
 import axios from "axios";
-export default function Ledger(props : {ledger : LedgerType}){
 
+export default function Ledger({ ledger, landingEvent, ledgertDetail }:{ ledger: LedgerType; landingEvent: any , ledgertDetail: any}) {
+    // 컴포넌트 내용...
     const [ledgerItem, setLedgerItem] = useState<LedgerType[]>([]);
 
     useEffect(() => {
+        axios.post("/api/ledger/ledgerItem", JSON.stringify({
+            "regDate2" : ledger,
+            "userNo" : sessionStorage.getItem("userNo")
+        }), {
+            headers : {
+                "Content-Type" : "application/json"
+            }
+        }).then(res => {
+            setLedgerItem(res.data);
+        })
+    }, [landingEvent]);
 
-            axios.post("/api/ledger/ledgerItem", JSON.stringify({
-                "regDate2" : props.ledger,
-                "userNo" : sessionStorage.getItem("userNo")
-            }), {
-                headers : {
-                    "Content-Type" : "application/json"
-                }
-            }).then(res => {
-                console.log(res.data);
-                setLedgerItem(res.data);
-            })
-    }, []);
     return (
         <div className={"itemWarp"}>
             {ledgerItem.map((ledger : LedgerType, index : number) => {
                 return(
-                    <div className={"ledgerItem"} key={index}>
+                    <div className={"ledgerItem"} key={index} onClick={() => ledgertDetail(ledger.fileManagerNo)}>
                         <div>
                             가격 : {ledger.price}
                         </div>
