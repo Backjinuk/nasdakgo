@@ -1,29 +1,93 @@
 import {CategoryType, LedgerType} from "../TypeList";
 import axios from "axios";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import e from "express";
+import Ledger from "./Ledger";
+import Swal from "sweetalert2";
 
-export default function  LedgerDetail({categoryList, ledger} : {categoryList : CategoryType[], ledger : LedgerType}){
+export default function  LedgerDetail({categoryList, ledger, ChangeEvent} : {categoryList : CategoryType[], ledger : LedgerType, ChangeEvent : any}){
 
-    const [fileManagerNo, setFileManagerNo] = useState(ledger.fileManagerNo);
-    const [price, setPrice] = useState(ledger.price);
-    const [dw, setDw] = useState(ledger.dw);
-    const [location, setLocation] = useState(ledger.location);
-    const [comment, setComment] = useState(ledger.comment);
-    const [categoryNo, setCategoryNo] = useState(ledger.categoryDto.categoryNo);
+    const [price, setPrice]             = useState(Number);
+    const [dw, setDw]                   = useState(Number);
+    const [location, setLocation]       = useState("");
+    const [comment, setComment]         = useState("");
 
-    function ledgerUpdate(fileManagerNo : number){
-        var queryString = $("from[name=updateLedger]").serializeArray();
+    useEffect(() => {
+        setPrice(ledger.price);       setDw(ledger.dw);
+        setLocation(ledger.location); setComment(ledger.comment);
+    }, [ledger]);
 
-        console.log(queryString);
 
-        axios.post("api/ledger/ledgerItemUpdate", JSON.stringify(fileManagerNo),{
+
+    function ledgerUpdate(){
+        let frm = $("form[name=updateLedger]").serializeArray();
+        let LedgerDto: any = {}; // JSON 객체로 사용할 빈 객체 생성
+
+        const usersDto = {
+            userNo: sessionStorage.getItem("userNo"),
+            userId: sessionStorage.getItem("userId")
+        }
+
+        for (let field of frm) {
+            LedgerDto[field.name] = field.value;
+
+            if (field.name === 'category_no') {
+                LedgerDto["categoryDto"] = {
+                    categoryNo: field.value
+                };
+            }
+        }
+
+        LedgerDto["usersDto"] = usersDto;
+
+        axios.post("api/ledger/ledgerItemUpdate", JSON.stringify(LedgerDto),{
             headers : {
                 "Content-Type" : "application/json"
             }
         }).then(res => {
-            console.log(res.data);
+
+            if(res.data === "false"){
+                Swal.fire({
+
+                    icon: 'error',
+                    title: '수정이 실패 되었습니다. 관리자에게 문의 하십시요',
+                    timer : 2000
+                })
+                return false;
+            }else{
+                Swal.fire({
+                    icon: 'success',
+                    title: '수정되었습니다.',
+                    timer : 2000
+                })
+                UtilsEvent();
+            }
+
         })
+    }
+
+    function ledgerDelete(fileManagerNo : number){
+        axios.post("api/ledger/ledgerDelete", JSON.stringify({
+            "fileManagerNo" : fileManagerNo
+        }), {
+            headers : {
+                "Content-Type" : "application/json"
+            }
+        }).then(res => {
+            Swal.fire({
+                icon : "success",
+                title : "삭제되었습니다.",
+                timer : 2000
+            })
+
+            UtilsEvent();
+        })
+    }
+
+    function UtilsEvent(){
+        // @ts-ignore
+        $("#ledgerDetail").modal('hide');
+        ChangeEvent();
     }
 
     return (
@@ -41,7 +105,8 @@ export default function  LedgerDetail({categoryList, ledger} : {categoryList : C
 
                             <div className="mb-3">
                                 <div className="form-floating">
-
+                                    <input type="hidden" name={"fileManagerNo"} value={ledger.fileManagerNo}/>
+                                    <input type="hidden" name={"categoryNo"}    value={ledger.categoryDto.categoryNo}/>
                                     <select name="category_no" className="form-select" id="floatingSelectGrid"  defaultValue={ledger.categoryDto.categoryNo}>
                                         <option value="">선택</option>
                                         {categoryList.map((category: CategoryType, index: number) => (
@@ -88,7 +153,8 @@ export default function  LedgerDetail({categoryList, ledger} : {categoryList : C
                         <div className="modal-footer">
                             {/*onClick={() => addLedger()}*/}
 
-                            <button type="button" className="btn btn-primary" onClick={() => ledgerUpdate(ledger.fileManagerNo)}>수정</button>
+                            <button type="button" className="btn btn-primary" onClick={() => ledgerUpdate()}>수정</button>
+                            <button type="button" className="btn btn-danger" onClick={() => ledgerDelete(ledger.fileManagerNo)}>삭제</button>
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal"> 취소
                             </button>
                         </div>

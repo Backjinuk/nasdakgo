@@ -34,7 +34,6 @@ export default function LedgerMain(){
             }
         }).then(res => {
             setLedgerList(res.data);
-            console.log(res.data)
         })
 
 
@@ -67,21 +66,16 @@ export default function LedgerMain(){
         })
     }
 
-
-
-
-
-
     return(
         <div>
             <CreateLeger ChangeEvent={ChangeEvent} categoryList={categoryList}/>
             <div className={"warp"}>
                 {ledgerList.map((ledger: LedgerType, index: number) => (
                     <div className="card shadow-lg" key={index}>
-                    <Ledger ledger={ledger} landingEvent={landingEvent} ledgertDetail={ledgertDetail}/>
+                    <Ledger ledger={ledger} landingEvent={landingEvent} ledgertDetail={ledgertDetail} />
                     </div>
                 ))}
-                {ledger && <LedgerDetail categoryList={categoryList} ledger={ledger}/>}
+                {ledger && <LedgerDetail categoryList={categoryList} ledger={ledger} ChangeEvent={ChangeEvent}/>}
             </div>
         </div>
     )

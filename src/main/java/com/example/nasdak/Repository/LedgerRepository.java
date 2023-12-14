@@ -19,17 +19,19 @@ public interface LedgerRepository extends JpaRepository<Ledger, Long> {
             "UPDATE Ledger l " +
             "SET l.comment= :comment ," +
                 "l.dw= :dw ," +
-                "l.location= :location," +
-                "l.price= :price " +
+                "l.location= :location ," +
+                "l.price= :price ," +
+                "l.category_no= :categoryNo " +
             "WHERE l.file_manager_no= :fileManagerNo"
             , nativeQuery = true
            )
-    void ledgerUpdate(long fileManagerNo, long dw, long price, String comment, String location);
+    int ledgerUpdate(long fileManagerNo, long dw, long price, String comment, String location, long categoryNo);
 
     @Query(value =
             "SELECT DISTINCT FORMATDATETIME(REG_DATE, 'yyyy-MM-dd') AS REG_DATE " +
                     "FROM Ledger l " +
-            "WHERE l.user_no= :userNo",
+            "WHERE l.user_no= :userNo " +
+            "ORDER BY FORMATDATETIME(REG_DATE, 'yyyy-MM-dd') DESC ",
             nativeQuery = true)
     List<?> findAllUsers(long userNo);
 
@@ -41,4 +43,6 @@ public interface LedgerRepository extends JpaRepository<Ledger, Long> {
                     "AND l.reg_date <= PARSEDATETIME(:regDate || ' 23:59:59', 'yyyy-MM-dd HH:mm:ss')"
             , nativeQuery = true)
     List<Ledger> ledgerItem(String regDate,  long userNo);
+
+    List<Ledger> findAllByOrderByRegDateAsc();
 }

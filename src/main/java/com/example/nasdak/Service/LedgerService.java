@@ -18,14 +18,14 @@ public class LedgerService {
     public Ledger save(Ledger ledger) { return ledgerRepository.save(ledger);
     }
 
-    public void ledgerUpdate(Ledger ledger) { ledgerRepository.ledgerUpdate(ledger.getFileManagerNo(), ledger.getDw(), ledger.getPrice(), ledger.getComment(), ledger.getLocation());
+    public int ledgerUpdate(Ledger ledger) { return ledgerRepository.ledgerUpdate(ledger.getFileManagerNo(), ledger.getDw(), ledger.getPrice(), ledger.getComment(), ledger.getLocation(), ledger.getCategory().getCategoryNo());
     }
 
     public void ledgerDelete(Ledger ledger) { ledgerRepository.deleteById(ledger.getFileManagerNo());
     }
 
     public List<Ledger> findAll() {
-        return ledgerRepository.findAll();
+        return ledgerRepository.findAllByOrderByRegDateAsc();
     }
 
     public List<?> findAllByUsers(long userNo) {

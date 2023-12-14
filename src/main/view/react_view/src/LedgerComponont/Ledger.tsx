@@ -24,15 +24,9 @@ export default function Ledger({ ledger, landingEvent, ledgertDetail }:{ ledger:
             {ledgerItem.map((ledger : LedgerType, index : number) => {
                 return(
                     <div className={"ledgerItem"} key={index} onClick={() => ledgertDetail(ledger.fileManagerNo)}>
-                        <div>
-                            가격 : {ledger.price}
-                        </div>
-                        <div>
-                            입/출금 : {ledger.dw}
-                        </div>
-                        <div className={"position-date"}>
-                            {ledger.regDate}
-                        </div>
+                        <div> 가격 : {ledger.price} </div>
+                        <div> 입/출금 : {ledger.dw} </div>
+                        <div className={"position-date"}> {ledger.regDate} </div>
                     </div>
                 )
             })}

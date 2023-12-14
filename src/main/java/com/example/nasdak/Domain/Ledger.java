@@ -30,7 +30,6 @@ public class Ledger extends FileManager {
     private long price;
 
     private long dw;
-
     private String location;
 
     private String comment;

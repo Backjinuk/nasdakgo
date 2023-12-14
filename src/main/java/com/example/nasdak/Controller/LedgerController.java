@@ -18,10 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.testng.reporters.jq.Model;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
@@ -108,8 +105,17 @@ public class LedgerController {
     }
 
     @RequestMapping("ledgerItemUpdate")
-    public Map<String, Objects> ledgerItemUpdate(@RequestBody LedgerDto ledgerDto){
+    public String ledgerItemUpdate(@RequestBody LedgerDto ledgerDto){
+        Map<String, Objects> map = new HashMap<>();
+        ledgerDto.setCategory(modelMapper.map(ledgerDto.getCategoryDto(), Category.class));
 
-        return null;
+        int i = ledgerService.ledgerUpdate(modelMapper.map(ledgerDto, Ledger.class));
+
+        return (i == 0) ? "false" : "success";
+    }
+
+    @RequestMapping("ledgerDelete")
+    public void ledgerDelete(@RequestBody LedgerDto ledgerDto){
+        ledgerService.ledgerDelete(modelMapper.map(ledgerDto, Ledger.class));
     }
 }

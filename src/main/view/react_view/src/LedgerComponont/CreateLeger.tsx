@@ -56,6 +56,9 @@ export default function CreateLeger({ChangeEvent, categoryList} : any){
                     timer: 400
                 });
                 ChangeEvent();
+
+                // @ts-ignore
+                $("#addLedger").modal('hide');
             }
         });
 

@@ -37,4 +37,6 @@ public class LedgerDto {
     private long userNo;
 
     private String regDate2;
+
+    private String originRegDat;
 }
